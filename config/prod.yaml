@@ -1,5 +1,9 @@
-env:"prod"
+env: "prod"
+app_name: "sso"
 storage_path: "/root/apps/grpc-auth/sso.db"
+token_ttl: 1h
+logger:
+  level: "info"  
 grpc:
   port: 3455
   timeout: 5s
